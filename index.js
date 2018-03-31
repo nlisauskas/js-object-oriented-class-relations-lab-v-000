@@ -51,12 +51,12 @@ class Trip {
 
     store.trips.push(this)
   }
-  passengers() {
+  passenger() {
     return store.passengers.filter(passenger => {
       return passenger.tripId === this.id;
     });
   }
-  drivers() {
+  driver() {
     return store.drivers.filter(driver => {
       return driver.tripId === this.id;
     });
