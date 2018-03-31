@@ -52,7 +52,7 @@ class Trip {
     store.trips.push(this)
   }
   passenger() {
-    return store.passengers.filter(passenger => {
+    return store.passengers.find(passenger => {
       return passenger.tripId === this.id;
     });
   }
