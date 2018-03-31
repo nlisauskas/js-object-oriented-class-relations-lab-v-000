@@ -53,7 +53,7 @@ class Trip {
   }
   passenger() {
     return store.passengers.find(passenger => {
-      return passenger.tripId === this.id;
+      return passenger.id === this.passengerId;
     });
   }
   driver() {
